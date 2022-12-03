@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+	<title>Гостинница</title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost&family=Kadwa&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body >
+	<header class="menu">
+		<ul class="links">
+		<li class="menu1">
+			<a href="/" class="link1">Главная</a>
+		</li>
+		<li class="menu1">
+			<a href="/gallery" class="link1">Галерея</a>
+		</li class="menu1">
+		<li>
+			<h1 class="hotel">HOTEL</h1>
+		</li >
+		<li class="menu1">
+			<a href="/booking" class="link1">Бронирование</a>
+		</li class="menu1">
+		<li class="menu1">
+			<a href="/about" class="link1">О нас</a>
+		</li>
+		</ul>
+	</header>
+	<section class="about">
+		<div>
+			<h2  class ="room">Информация об отеле</h2>
+			<p class="description">
+				Вы получите настоящее эстетическое удовольствие, остановившись в <br>элегантном и функциональном номере.
+ 				Все сделано для того, <br> чтобы вы могли чувствовать себя так же комфортно, как дома.
+			</p>
+		</div>
+	</section>
+	<section>
+		<div class="mabilities">
+			<div >
+				<ul class="abilities">
+					<li class="abilities1">
+						Кровати
+					</li>
+					<li class="abilities1">
+						Спа-комплекс
+					</li>
+					<li class="abilities1">
+						Ресторан
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="photos">
+			<div >
+				<ul class="pabilities">
+					<li class="pabilities1">
+						<img style="width: 700px; height: 780px"src="{{ url_for('static', filename='images/beds.jpg') }}" alt="">
+					</li>
+					<li class="pabilities1">
+						<img style="width: 700px; height: 780px" src="{{ url_for('static', filename='images/spa-complex.jpg') }}" alt="">
+					</li>
+					<li class="pabilities1">
+						<img style="width: 700px; height: 780px" src="{{ url_for('static', filename='images/restaurants.jpg') }}" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="top">
+		</div>
+		<div class="bottom">
+		</div>
+	</footer>
